@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>QUESTIONARIO</title>
+	<meta charset="utf-8">
+	<style type="text/css" >
+		html{
+			background: #f0f0f0
+		}
+		body{
+			width: 300px ; /* Uma configuração basica para tornar a tela mais atrativa*/
+			border: solid 1px ;
+			border-radius: 10px;
+			background: white;
+			padding: 100px 30px;
+			margin: 20px auto;
+
+		}
+		form input {
+			display: block;
+			padding: 10px 20px;
+			margin-bottom: 20px;
+			border: solid 1px grey;
+			border-radius: 5px
+		}
+		
+	</style>
+</head>
+<body>
+	<main>
+		<form >
+			<label>1) Presencial ou homeoffice?</label>
+			<input list="lista_prova">
+			<datalist id="lista_prova">
+				<option value="Presencial">
+				<option value="homeoffice">
+
+			</datalist>
+		</form>
+		<form action="final.html" method="post" style="margin-top:100px;">
+			<label style="display: block;">2) Quanto é 25+25?</label><br>
+			<label for="certo">50</label>
+			<input type="radio" id="certo" name="results" value="certo">
+			<label for="errado">55</label>
+			<input type="radio" id="errado" name="results" value="errado" >
+			
+			
+			<input type="submit" name="encerrar" style="margin-top:100px;">
+		</form>
+	</main>
+
+</body>
+</html>
