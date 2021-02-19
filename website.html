@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Portal dos animais</title>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="">
+	<style type="text/css">
+		html{
+			background-color: black;
+		}
+		body{margin: 0;
+			padding: 0;
+			width: 100%
+			}
+		main{
+			overflow: hidden;
+		}
+		header{
+			opacity: 0.9	;
+			width: 100%;
+			position: fixed;
+			z-index: 10;
+			box-shadow: 0 0 30px #1E90FF;
+		}
+		
+		header img{
+			width: 100%;
+			height:175px;
+
+		}
+		/*##############################################################*/
+		/*Menu de navegação*/
+		nav{
+			width: 50%;
+			height: 40px;
+			background-color: #1C1C1C;
+			position: fixed;
+			top: 135px;
+			left:25%;
+			opacity: 0.5;
+			z-index:11;
+			box-shadow: 0 0 30px #1E90FF;
+			
+		}
+		nav ul{/*Menu principal*/
+			margin: 0;
+			padding: 0;
+			text-align: center;
+
+		}
+		nav ul li{/*Itens menu principal*/
+			list-style-type: none;
+			display: inline;
+			float:left;
+			position: relative;	
+
+		}
+		
+		nav ul li a{/*Elemento dos itens do menu principal*/
+			text-decoration: none;
+			display: inline-block;
+			background: #1C1C1C;
+			color:white;
+			padding: 10px;
+			width: 130px;
+			text-shadow: 0 0 20px #1E90FF;
+						
+		}
+		nav ul li ul {/*Submenu */
+			display: none;
+			position:absolute;
+			
+		}
+		nav ul li ul li{/*Itens do submenu */
+
+		}
+		nav ul li ul li a {/*Elemntos dos itens do submenu */
+			width: 130px;
+
+		}
+		nav ul li a:hover{
+			background-color: black;
+
+		}
+
+		nav ul li:hover ul{/*Elemento para mostrar os subs menus*/
+			display: block;
+
+		}
+		/*Fim do menu de navegação*/
+		/*##############################################################*/
+		
+		section:nth-of-type(2){
+			width: 24.5%;
+			height: 1500px;
+			border-left:solid 2px #000;
+			float: right;
+		}
+		section img{
+			width: 300px;
+			height: 200px;
+			float: left;
+			margin-top: 300px;
+			position: fixed;
+			opacity: 0.1;
+
+		}
+		section:nth-of-type(1){
+			width: 24.5%;
+			height: 1500px;
+			border-right:solid 2px #000;
+			float: left;
+		}
+		/*##############################################################*/
+		/*Conteudo do site*/
+		article{ 
+			margin:0;
+			padding: 0;
+			position: relative;
+			top: 200px;
+			margin: 0 auto;
+			width: 50%;
+			overflow: hidden;
+			background: black;
+		}
+		article h1{
+			letter-spacing: -1px;
+			margin-left: 15px;
+			padding: 20px;
+			color: white;
+			text-shadow: 0 0 30px #1E90FF;
+		}
+		article figure img{
+			width:53%;
+			height: 250px;
+			float: left;
+			margin-bottom: 100px;
+		}
+		article p{
+			width: 45%;
+			float: right;
+			color: white;
+		}
+
+		
+		/*Fim do conteudo*/
+		/*##############################################################*/
+		footer{	
+			text-align: center;
+			text-shadow: 0 0 10px #1E90FF;
+			margin: 0 auto;
+			width: 50%;
+			height: 50px;
+			background-color: block;
+			clear: both;
+			color: white;	
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<!--Criando a capa do site-->
+		<header>
+			<img src="imagens/topo1.jpg ">
+		</header>
+		
+		<!--Menu de navegação-->
+		<nav> 
+			<ul><!--Menu principal-->
+				<li><a href="nada.html">Jogos</a><!--Itens do menu principal--> 
+					
+					<ul><!--submenu principal-->
+						<li><a href="nada.html">Mortal kombat 1</a></li> <!--Itens do submenu principal-->
+						<li><a href="nada.html">Mortal kombat 2</a></li>
+						<li><a href="nada.html">Mortal kombat 3</a></li>
+						<li><a href="nada.html">Mortal kombat 4</a></li>
+					</ul>		
+				</li>
+				<li><a href="nada.html">Personagens</a>
+					<ul>
+						<li><a href="nada.html">Subzero</a></li>
+						<li><a href="nada.html">Escorpion</a></li>
+						<li><a href="nada.html">Repetile</a></li>
+						<li><a href="nada.html">Smoke</a></li>
+						<li><a href="nada.html">Sonia</a></li>
+						<li><a href="nada.html">Ryden</a></li>
+					</ul>			
+				</li>		
+				<li><a href="nada.html">Areanas</a>	
+					<ul>
+						<li><a href="nada.html">Armory</a></li>
+						<li><a href="nada.html">Balcony</a></li>
+						<li><a href="nada.html">Falling Cliffs.</a></li>
+						<li><a href="nada.html">Graveyard.</a></li>
+						<li><a href="nada.html">Kombat Temple.</a></li>
+						<li><a href="nada.html">Hidden Portal.</a></li>
+					</ul>
+				</li>
+				<li><a href="nada.html">Especial</a>
+					<ul>
+						<li><a href="nada.html">Filmes</a></li>
+						<li><a href="nada.html">Histórias</a></li>
+						<li><a href="nada.html">Outros</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!--assuntos tops da pagina//propaganda//recomendações-->
+		<section><img src="imagens/mk.jpg"></section>
+		<section><img src="imagens/mk.jpg"></section>
+		<!--Conteudo principal-->
+		
+		<article>
+				<h1>Lui Kang</h1>
+				
+				<figure>
+					<img src="imagens/lk.jpg">
+				</figure>
+				<p> Liu Kang era um órfão que foi encaminhado para o Templo Shaolin, onde treinou bastante para se tornar um guerreiro formidável.
+				Ele participou do décimo torneio Mortal Kombat, em que o destino do Plano Terreno estava em jogo e se tornou o grande campeão após derrotar Goro. Foi nesta ocasião que ele se tornou amigo dos demais heróis da série, como Johnny Cage e Sonya Blade.
+				No segundo game, Liu Kang e seus aliados tiveram de viajar até a Exoterra para um novo torneio. Lá, o guerreiro conseguiu derrotar o vilão Shao Kahn.</p>
+				<figure >
+					<img src="imagens/lk1.jpg">
+				</figure>
+				<p >
+					Bicycle Kick: provavelmente, o golpe mais famoso do guerreiro. Ele dá uma série de chutes em seu oponente, em que parece estar andando de bicicleta.
+				</p>
+
+				<p>
+					Por fim, uma curiosidade que vale ser citada é que no primeiro game da franquia, o Fatality de Liu Kang era, na teoria, o único que não matava explicitamente seu oponente, por conta da filosofia Shaolin: ele apenas dava um salto, seguido de um gancho, no perdedor da luta.
+
+					No entanto, a partir do segundo game, ele também ganhou Fatalities sangrentos e brutais. Foi nesta ocasião que ele usou seu Fatality mais conhecido: o Dragon Bite, em que ele se transforma em um dragão e come a parte de cima do corpo do perdedor. Essa versão apareceu em algumas sequências com o passar dos anos.
+				</p>
+
+		</article>
+		
+		<footer>By Vinicius Rodrigues <address>viniciusdasilvar3@gmail.com</address></footer>
+
+	</main>
+
+</body>
+</html>
