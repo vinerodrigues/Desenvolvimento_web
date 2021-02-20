@@ -4,7 +4,13 @@
 	<title>Portal dos animais</title>
 	<meta charset="utf-8">
 	<meta http-equiv="refresh" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Reggae+One&display=swap" rel="stylesheet">
 	<style type="text/css">
+		/*##############################################################*/
+		/*configuração da pagina*/
 		html{
 			background-color: black;
 		}
@@ -15,22 +21,25 @@
 		main{
 			overflow: hidden;
 		}
+		/*##############################################################*/
+		/*Cabeçalho da pagina*/
 		header{
 			opacity: 0.9	;
 			width: 100%;
 			position: fixed;
 			z-index: 10;
-			box-shadow: 0 0 30px #1E90FF;
+			box-shadow: 0 0 30px red;
 		}
-		
 		header img{
-			width: 100%;
+			width: 50%;
 			height:175px;
-
+			margin-left: 25%;
 		}
 		/*##############################################################*/
 		/*Menu de navegação*/
 		nav{
+			font-family: 'Reggae One', cursive;
+			min-width: 400px;
 			width: 50%;
 			height: 40px;
 			background-color: #1C1C1C;
@@ -39,7 +48,7 @@
 			left:25%;
 			opacity: 0.5;
 			z-index:11;
-			box-shadow: 0 0 30px #1E90FF;
+			box-shadow: 0 0 30px red;
 			
 		}
 		nav ul{/*Menu principal*/
@@ -72,37 +81,32 @@
 			
 		}
 		nav ul li ul li{/*Itens do submenu */
-
 		}
 		nav ul li ul li a {/*Elemntos dos itens do submenu */
 			width: 130px;
-
 		}
 		nav ul li a:hover{
 			background-color: black;
-
 		}
 
 		nav ul li:hover ul{/*Elemento para mostrar os subs menus*/
 			display: block;
-
 		}
 		/*Fim do menu de navegação*/
 		/*##############################################################*/
-		
 		section:nth-of-type(2){
 			width: 24.5%;
 			height: 1500px;
 			border-left:solid 2px #000;
 			float: right;
+
 		}
 		section img{
 			width: 300px;
-			height: 200px;
+			height: 150px;
 			float: left;
-			margin-top: 300px;
 			position: fixed;
-			opacity: 0.1;
+			opacity: 0.2;
 
 		}
 		section:nth-of-type(1){
@@ -124,28 +128,57 @@
 			background: black;
 		}
 		article h1{
+			font-family: 'Reggae One', cursive;
 			letter-spacing: -1px;
 			margin-left: 15px;
 			padding: 20px;
 			color: white;
-			text-shadow: 0 0 30px #1E90FF;
+			text-shadow: 0 0 30px red;
+			font-size: 3em;
 		}
-		article figure img{
+		article figure:nth-of-type(1) img{
 			width:53%;
 			height: 250px;
 			float: left;
-			margin-bottom: 100px;
+			margin-bottom: 200px;
 		}
-		article p{
+		article figure:nth-of-type(2) img{
+			width:53%;
+			height: 250px;
+			float: right;
+			margin-bottom: 70px;
+	
+		}
+		article p:nth-of-type(1){
 			width: 45%;
 			float: right;
 			color: white;
-		}
+			text-shadow: 0 0 10px blue;
+			font-family: 'Nunito', sans-serif;
 
-		
+			
+		}
+		article p:nth-of-type(2){
+			font-family: 'Nunito', sans-serif;
+			width: 45%;
+			float: right;
+			color: white;
+			text-shadow: 0 0 10px red;
+			margin-bottom: 70px;
+		}
+		article p:nth-of-type(3){
+			font-family: 'Nunito', sans-serif;
+			width: 100%;
+			float: right;
+			color: white;
+			text-shadow: 0 0 10px orange;
+			clear: both;
+
+		}
 		/*Fim do conteudo*/
 		/*##############################################################*/
 		footer{	
+			font-family: 'Nunito', sans-serif;
 			text-align: center;
 			text-shadow: 0 0 10px #1E90FF;
 			margin: 0 auto;
@@ -167,7 +200,7 @@
 		<!--Menu de navegação-->
 		<nav> 
 			<ul><!--Menu principal-->
-				<li><a href="nada.html">Jogos</a><!--Itens do menu principal--> 
+				<li><a href="portal2.html">Jogos</a><!--Itens do menu principal--> 
 					
 					<ul><!--submenu principal-->
 						<li><a href="nada.html">Mortal kombat 1</a></li> <!--Itens do submenu principal-->
@@ -176,7 +209,7 @@
 						<li><a href="nada.html">Mortal kombat 4</a></li>
 					</ul>		
 				</li>
-				<li><a href="nada.html">Personagens</a>
+				<li><a href="restaurante.html">Personagens</a>
 					<ul>
 						<li><a href="nada.html">Subzero</a></li>
 						<li><a href="nada.html">Escorpion</a></li>
@@ -224,6 +257,9 @@
 				</figure>
 				<p >
 					Bicycle Kick: provavelmente, o golpe mais famoso do guerreiro. Ele dá uma série de chutes em seu oponente, em que parece estar andando de bicicleta.
+					Double Dragon Kick: uma versão alternativa do Flying Kick, em que o guerreiro dá dois chutes no tronco do oponente ao invés de um.
+					Dragon Fire: Liu Kang dispara uma chama no formato de um dragão na direção do oponente. A partir do segundo game, ganhou a capacidade de usar o golpe no ar. Em Mortal Kombat 2011 e 11, o Dragon Fire passou a se chamar High Fireball.
+
 				</p>
 
 				<p>
