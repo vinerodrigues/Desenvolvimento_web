@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cadastro 1</title>
+	<meta charset="utf-8">
+	<style type="text/css" >
+		html{
+			background: #f0f0f0
+		}
+		body{
+			width: 300px ; /* Uma configuração basica para tornar a tela mais atrativa*/
+			border: solid 1px ;
+			border-radius: 10px;
+			background: white;
+			padding: 100px 30px;
+			margin: 20px auto;
+
+		}
+		form input {
+			display: block;
+			padding: 10px 20px;
+			margin-bottom: 20px;
+			border: solid 1px grey;
+			border-radius: 5px
+		}
+		select{
+			display: block;
+			padding: 10px 20px;
+			margin-bottom: 20px;
+			border: solid 1px grey;
+			border-radius: 5px
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Segunda etapa do formulario</h1>
+		</header>
+		<form>
+			<label for="data_nascimento"> Data de nascimento:</label>
+			<input type="date" name="data_nascimento">
+
+			<label for="telefone">Contato:</label>
+			<input type="tel" name="telefone" placeholder="+55 (021) 000-000-000" autocomplete="on" required>
+
+			<label for="site">Web site:</label>
+			<input type="url" name="site" autocomplete="on" placeholder="http://">
+
+			<label for="select"> Estado:</label>
+			<select>
+				<option value="1" selected>Rio de Janeiro</option>
+				<option value="2">Espirito Santo</option>
+				<option value="3">São Paulo</option>
+				<option value="4">Minas Gerais</option>
+			</select>
+		</form>
+		<form action="questionario.html" method="post">
+			<label style="display: block;"> Deseja realizar o questinário:</label><br>
+			<label for="continuar">sim</label>
+			<input type="radio" id="continuar" name="continuar" value="continuar">
+			<label for="parar">Não</label>
+			<input type="radio" id="parar" name="continuar" value="parar">
+			
+			
+			<input type="submit" name="próximo">
+		</form>
+	</main>
+
+</body>
+</html>
